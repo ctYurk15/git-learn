@@ -1,8 +1,10 @@
 body
 {
     background-color: black;
+    color: mediumpurple;
 }
 
+/*Header*/
 .header-div
 {
     width: 100%;
@@ -11,21 +13,54 @@ body
     border-radius: 7px;
 }
 
-.header-text
+.header-header
 {
     text-align: center;
     float: center;
     color: mediumpurple;
+    text-align: center;
 }
 
 .header-button
 {
     float: right;
-    margin-right: 90px;
-    margin-top: -80px;
+    margin-right: 2%;
+    margin-top: -3.5%;
+    height: 100%;
+    background-color: black;
+    border: 0px solid black;
 }
 
 .header-button img
 {
     height: 10vh;
+}
+
+
+/*Main*/
+.main-div
+{
+    
+}
+
+.main-header
+{
+    margin-left: 30%;
+}
+
+.main-div-table
+{
+    text-align: justify;
+}
+
+.main-div-table img
+{
+    width: 100%;
+}
+
+/*Side*/
+.side-div
+{
+    border: 3px solid purple;
+    border-radius: 7px;
 }
