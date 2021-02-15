@@ -1,5 +1,31 @@
-.header
+body
+{
+    background-color: black;
+}
+
+.header-div
+{
+    width: 100%;
+    float: left;
+    border: 3px solid purple;
+    border-radius: 7px;
+}
+
+.header-text
 {
     text-align: center;
-    color: purple;
+    float: center;
+    color: mediumpurple;
+}
+
+.header-button
+{
+    float: right;
+    margin-right: 90px;
+    margin-top: -80px;
+}
+
+.header-button img
+{
+    height: 10vh;
 }
