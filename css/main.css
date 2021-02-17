@@ -60,6 +60,48 @@ body
 {
     border: 3px solid purple;
     border-radius: 7px;
+    background-color: black;
+    position: absolute;
+    text-align: center;
+    left: 83%;
+    top: 14%;
+    width: 16.5%;
+    height: 96.5%;
+    display: none;
+    color: mediumpurple;
+}
+
+.side-div-list
+{
+    text-align: left;
+    list-style-type: none;
+}
+
+.side-div-link
+{
+    text-decoration: none;
+    color: mediumpurple;
+    font-size: 25px;
+}
+
+.side-div-linkY
+{
+    color: yellow;
+}
+
+.side-div-linkMO
+{
+    color: darkorange;
+}
+
+.side-div-linkO
+{
+    color: orangered;
+}
+
+.side-div-linkR
+{
+    color: red;
 }
 
 /*Footer*/

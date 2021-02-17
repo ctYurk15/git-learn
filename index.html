@@ -6,21 +6,41 @@
         <link rel = 'icon' href='images/logo.png' type = 'image/x-icon'>
         <title>KZ300 - головна</title>
     </head>
-    <body>  
+    <body> 
+         
         <table border="0px" class="mainTable">
-            <tr>
+            <tr> <!-- Header -->
                 <td width="100%" colspan="2">
                     <div class='header-div'>
                         <h1 class='header-header'>Головна</h1>
-                        <button class="header-button"><img src='images/sun.png'></button>
+                        <button class="header-button" onclick="sideDivDisp()"><img src='images/sun.png'></button>
                     </div>
                 </td>
             </tr>
-            <tr>
+            <tr> <!-- Main -->
+               
                 <td>
+                   
                     <div>
                         <h1 class="main-header">Головна</h1>
                         <table border="0px" class="main-div-table">
+                            <div class="side-div" id="p2">
+                                <h1>Види калькуляторів</h1>
+                                <ul class="side-div-list">
+                                    <li>
+                                        <a href="#" class="side-div-link side-div-linkY">Математичні</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="side-div-link side-div-linkMO">Математичні</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="side-div-link side-div-linkO">Математичні</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="side-div-link side-div-linkR">Математичні</a>
+                                    </li>
+                                </ul>
+                            </div>
                             <tr>
                                 <td width="35%" valign="top">
                                     <img src='images/delorean.jpg'>
@@ -33,7 +53,7 @@
                     </div>
                 </td>
             </tr>
-            <tr>
+            <tr> <!-- Footer -->
                 <td>
                     <div class="footer-div">
                         <br><b>KZ300</b><br>
@@ -69,5 +89,6 @@
             </tr>
         </table>
         
+        <script src="scripts/script.js"></script>
     </body>
 </html>
