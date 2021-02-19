@@ -1,0 +1,24 @@
+/*Calculators*/
+.calculator-list
+{
+    list-style-type: none;
+}
+
+.calculator-button
+{
+    border: 3px solid purple;
+    border-radius: 7px;
+    color: mediumpurple;
+    background-color: black;
+}
+
+.calculator-div
+{
+    border: 3px solid purple;
+    border-radius: 7px;
+    padding: 10px;
+    width: 20%;
+    height: 40vh;
+    float: left;
+    margin: 20px;
+}
