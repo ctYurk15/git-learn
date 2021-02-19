@@ -58,3 +58,10 @@ function cPT()
     //showing result
     document.getElementById('resultPPT').innerHTML = result;
 }
+
+function cEDT()
+{
+    var option = document.getElementById('weaponsOptionCS').value; //getting chosed weapons value(damage per second)
+    
+    document.getElementById('resultPEDT').innerHTML = "За "+(100/option).toFixed(2)+"c";
+}

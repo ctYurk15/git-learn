@@ -36,3 +36,21 @@
     color: mediumpurple;
     background-color: black;
 }
+
+.calculators-div-options
+{
+    color: mediumpurple;
+    background-color: black;
+}
+
+.calculators-div-options:hover
+{
+    color: purple;
+    background-color: black;
+}
+
+.calculators-div-options:active
+{
+    color: purple;
+    background-color: black;
+}
