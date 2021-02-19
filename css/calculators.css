@@ -21,4 +21,18 @@
     height: 40vh;
     float: left;
     margin: 20px;
+    text-align: center;
+}
+
+.calculator-div img
+{
+    width: 60%;
+}
+
+.calculator-div-numInput
+{
+    border: 3px solid purple;
+    border-radius: 7px;
+    color: mediumpurple;
+    background-color: black;
 }
