@@ -65,3 +65,20 @@ function cEDT()
     
     document.getElementById('resultPEDT').innerHTML = "За "+(100/option).toFixed(2)+"c";
 }
+
+function cPIW()
+{
+    var options = document.getElementsByName('pubgItem'); //getting all the options
+    var result = 0;
+    
+    for(var i = 0; i < options.length; i++)
+    {
+        if(options[i].checked)
+        {
+            result += parseFloat(options[i].value); //if option is checked, adding value to total
+        }
+    }
+    
+    //printing result
+    document.getElementById('resultPPIW').innerHTML = "Загалом: "+result+"кг"
+}
