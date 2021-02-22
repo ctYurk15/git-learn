@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' href="css/main.css">
+        <link rel='stylesheet' href="css/calculators.css">
+        <link rel = 'icon' href='images/logo.png' type = 'image/x-icon'>
+        <title>KZ300 - інвестиційні</title>
+    </head>
+    <body> 
+         
+        <table border="0px" class="mainTable">
+            <tr> <!-- Header -->
+                <td width="100%" colspan="2">
+                    <div class='header-div'>
+                        <h1 class='header-header' onclick="location.replace('index.html');">Головна</h1>
+                        <button class="header-button" onclick="sideDivDisp()"><img src='images/sun.png'></button>
+                    </div>
+                </td>
+            </tr>
+            <tr> <!-- Main -->
+               
+                <td>
+                   
+                    <div>
+                        <h1 class="main-header">Інфестиційні калькулятори</h1>
+                        <table border="0px" class="main-div-table">
+                            <div class="side-div" id="p2">
+                                <h1>Види калькуляторів</h1>
+                                <ul class="side-div-list">
+                                    <li>
+                                        <a href="math.html" class="side-div-link side-div-linkY">Математичні</a>
+                                    </li>
+                                    <li>
+                                        <a href="game.html" class="side-div-link side-div-linkMO">Ігрові</a>
+                                    </li>
+                                    <li>
+                                        <a href="money.html" class="side-div-link side-div-linkO">Інвестиційні</a>
+                                    </li>
+                                    <li>
+                                        <a href="dev.html" class="side-div-link side-div-linkR">Для розробників</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <tr>
+                                <div class="calculator-div">
+                                    <h2>Прибуток від депозиту</h2>                                                                            
+                                    <img src="images/money.png" align="left">  
+                                    <label for="depositInvestment">Інвестиція</label><br><input type="text" value="100" id="depositInvestment" name="depositInvestment" class="calculator-div-numInput" size="8"><br> 
+                                    <label for="depositTime">Час(у місяцях)</label><br><input type="text" value="12" id="depositTime" name="depositTime" class="calculator-div-numInput" size="8"> <br> 
+                                    <label for="depositProcent">Річний відсоток</label><br><input type="text" value="10.5" id="depositProcent" name="depositP" class="calculator-div-numInput" size="8"><br> <br> 
+                                    <button class="calculator-button" onclick="cCP()">Обчислити</button><br><br><br>
+                                    <p id="resultPCP"></p>
+                                </div>
+                                <div class="calculator-div">
+                                    <h2>Прибуток від акцій(NEEDS TO BE FIXED!!1!)</h2>                                                                            
+                                    <img src="images/stock.png" align="left">  
+                                    <label for="stockInvestment">Інвестиція</label><br><input type="text" value="100" id="stockInvestment" name="stockInvestment" class="calculator-div-numInput" size="8"><br> 
+                                    <label for="stockTime">Час(у роках)</label><br><input type="text" value="12" id="stockTime" name="stockTime" class="calculator-div-numInput" size="8"> <br> 
+                                    <label for="stockProcent">Відсоток дивідентів</label><br><input type="text" value="10.5" id="stockProcent" name="stockP" class="calculator-div-numInput" size="8"><br> <br> 
+                                    <button class="calculator-button" onclick="cCSP()">Обчислити</button><br><br><br>
+                                    <p id="resultPCSP"></p>
+                                </div>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr> <!-- Footer -->
+                <td>
+                    <div class="footer-div">
+                        <br><b>KZ300</b><br>
+                        <table border="0px">
+                            <tr>
+                                <td width="10%">
+                                    <img src="images/logo.png" width="100%">
+                                </td>
+                                <td valign="bottom">
+                                    <ul class="footer-list">
+                                        <li>
+                                            <a href="#" class="footer-list-link">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="footer-list-link">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="footer-list-link">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="footer-list-link">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="footer-list-link">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
