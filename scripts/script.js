@@ -59,6 +59,23 @@ function cPT() //get one side of triangle with 90 angle
     document.getElementById('resultPPT').innerHTML = result;
 }
 
+function cNC() //how much numbers we can make 
+{
+    //getting value
+    var numbersCount = document.getElementById('inc').value;
+    var numbersLenght = document.getElementById('inl').value;
+    var canRepeat = document.getElementById('inr').checked;
+    var result = 1;
+    
+    for(var i = 0; i < numbersLenght; i++)
+    {
+        if(canRepeat) result *= numbersCount;
+        else result *= (numbersCount-i);
+    }
+    
+    document.getElementById('resultPCNC').innerHTML = "Загалом можна скласти " + result + " комбінацій";
+}
+
 function cEDT() //kill time CSGO
 {
     var option = document.getElementById('weaponsOptionCS').value; //getting chosed weapons value(damage per second)
