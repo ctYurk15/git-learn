@@ -100,6 +100,19 @@ function cPIW() //loot weight pugb
     document.getElementById('resultPPIW').innerHTML = "Загалом: "+result+"кг"
 }
 
+function cSC() //smelting furnace calculator
+{
+    var fuelEffectivity = document.getElementById('fuelOption').value;
+    var items = document.getElementById('objectCount').value;
+    
+    //getting chosen option text
+    var e = document.getElementById("fuelOption");
+    var value = e.options[e.selectedIndex].value;
+    var text = e.options[e.selectedIndex].text;
+    
+    document.getElementById('resultPSC').innerHTML = "Необхідно витратити " + parseInt(items/fuelEffectivity) + " " + text;
+}
+
 function cCP() //bank deposit profit
 {
     //getting all data user logged
@@ -128,4 +141,12 @@ function cCSP() //company stocks profit !!!!!FIX IT!!!!!!!
     
     var total = money*Math.pow((1+(yearProcent/100)), time);
     document.getElementById('resultPCSP').innerHTML = "За "+time+" років у вас буде "+total;
+}
+
+function cS() //savings calculator
+{
+    var money = parseInt(document.getElementById('savingsCount').value);
+    var time = parseInt(document.getElementById('savingsTime').value);
+    
+    document.getElementById('resultPS').innerHTML = "За "+time+" місяців у вас буде "+time*money;
 }
