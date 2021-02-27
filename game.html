@@ -45,24 +45,24 @@
                             <tr>
                                 <div class="calculator-div">
                                     <h2>Час смерті противника(CS:GO)</h2>                                                                            
-                                    <img src="images/csgo.png"><br>
+                                    <img src="images/csgo.png" ><br>
                                     Зброя:
                                     <select class="calculators-div-options" id="weaponsOptionCS">
                                         <option id="Glock" value="187">Glock</option>
                                         <option id="Deagle" value="280">Deagle</option>
                                     </select>                                
-                                    <button class="calculator-button" onclick="cEDT()">Обчислити</button>
-                                    <p id="resultPEDT"></p>
+                                    <button class="calculator-button" onclick="calculateEnemyDeathTime()">Обчислити</button>
+                                    <p id="resultPEnemyDeathTime"></p>
                                 </div>
                                 <div class="calculator-div">
                                     <h2>Вага лута PUBG</h2>                                                                            
-                                    <img src="images/pung.png"><br>
+                                    <img src="images/pung.png"  align="left"><br>
                                     <input type="checkbox" id="pubgItem1" name="pubgItem" value="20">
                                     <label for="scales1">Велика аптечка</label><br>
                                     <input type="checkbox" id="pubgItem2" name="pubgItem" value="10">
                                     <label for="scales1">Мала аптечка</label><br>
-                                    <button class="calculator-button" onclick="cPIW()">Обчислити</button>
-                                    <p id="resultPPIW"></p>
+                                    <button class="calculator-button" onclick="calculatePUBGLootWeight()">Обчислити</button>
+                                    <p id="resultPPUBGItemsWeight"></p>
                                 </div>
                                 <div class="calculator-div">
                                     <h2>Kалькулятор для пічки minecraft</h2>                                                                            
@@ -75,8 +75,8 @@
                                         <option id="Log" value="1.5">Дерево</option>
                                         <option id="Coal" value="8">Вугілля</option>
                                     </select><br><br>
-                                    <button class="calculator-button" onclick="cSC()">Обчислити</button><br><br><br><br>
-                                    <p id="resultPSC"></p>
+                                    <button class="calculator-button" onclick="calculateFuelCount()">Обчислити</button><br><br><br><br>
+                                    <p id="resultPFuelCount"></p>
                                 </div>
                             </tr>
                         </table>
