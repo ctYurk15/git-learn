@@ -18,7 +18,7 @@
     border-radius: 7px;
     padding: 10px;
     width: 29%;
-    height: 45vh;
+    height: 50vh;
     float: left;
     margin: 20px;
     text-align: center;
@@ -40,13 +40,15 @@
 .calculators-div-options
 {
     color: mediumpurple;
+    border: 3px solid purple;
+    border-radius: 7px;
     background-color: black;
 }
 
-.calculators-div-options:hover
+.calculators-div-options:hover, .calculator-button:hover, .calculator-div-numInput:hover
 {
     color: purple;
-    background-color: black;
+    border: 3px solid mediumpurple;
 }
 
 .calculators-div-options:active

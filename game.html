@@ -37,31 +37,50 @@
                                     <li>
                                         <a href="money.html" class="side-div-link side-div-linkO">Інвестиційні</a>
                                     </li>
-                                    <li>
+                                    <!--<li>
                                         <a href="dev.html" class="side-div-link side-div-linkR">Для розробників</a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                             <tr>
                                 <div class="calculator-div">
-                                    <h2>Час смерті противника(CS:GO)</h2>                                                                            
-                                    <img src="images/csgo.png" ><br>
+                                    <h2>Час смерті противника(CS:GO) з пістолета</h2>  
+                                    <img src="images/csgo.png"><br>
                                     Зброя:
                                     <select class="calculators-div-options" id="weaponsOptionCS">
-                                        <option id="Glock" value="187">Glock</option>
-                                        <option id="Deagle" value="280">Deagle</option>
+                                        <option value="187">Glock</option>
+                                        <option value="206">P2000</option>
+                                        <option value="206">USP-S</option>
+                                        <option value="233">P250</option>
+                                        <option value="275">Tec-9</option>
+                                        <option value="317">Dual Berettas</option>
+                                        <option value="213">Five-SeveN</option>
+                                        <option value="300">CZ75 Auto</option>
+                                        <option value="280">Deagle</option>
                                     </select>                                
                                     <button class="calculator-button" onclick="calculateEnemyDeathTime()">Обчислити</button>
                                     <p id="resultPEnemyDeathTime"></p>
                                 </div>
                                 <div class="calculator-div">
                                     <h2>Вага лута PUBG</h2>                                                                            
-                                    <img src="images/pung.png"  align="left"><br>
-                                    <input type="checkbox" id="pubgItem1" name="pubgItem" value="20">
-                                    <label for="scales1">Велика аптечка</label><br>
-                                    <input type="checkbox" id="pubgItem2" name="pubgItem" value="10">
-                                    <label for="scales1">Мала аптечка</label><br>
-                                    <button class="calculator-button" onclick="calculatePUBGLootWeight()">Обчислити</button>
+                                    <img src="images/pung.png" align="left" style="float: left">
+                                    <div style="text-align: left; float: left">
+                                        <input type="checkbox" name="pubgItem" value="20"> Велика аптечка <input type="text" value="1" id="lootCount1" class="calculator-div-numInput" size="5"><br>
+                                        <input type="checkbox" name="pubgItem" value="10"> Мала аптечка <input type="text" value="1" id="lootCount2" class="calculator-div-numInput" size="5"><br>
+                                        <input type="checkbox" name="pubgItem" value="2"> Бинт <input type="text" value="1" id="lootCount3" class="calculator-div-numInput" size="5"><br>
+                                        <input type="checkbox" name="pubgItem" value="4"> Енергетик <input type="text" value="1" id="lootCount4" class="calculator-div-numInput" size="5"><br>
+                                        <input type="checkbox" name="pubgItem" value="10"> Знеболююче <input type="text" value="1" id="lootCount5" class="calculator-div-numInput" size="5"><br>
+                                        <input type="checkbox" name="pubgItem" value="10"> Адреналін <input type="text" value="1" id="lootCount6" class="calculator-div-numInput" size="5"><br>
+                                        <input type="checkbox" name="pubgItem" value="0.38"> 9mm <input type="text" value="1" id="lootCount7" class="calculator-div-numInput" size="5"><br>
+                                        <input type="checkbox" name="pubgItem" value="0.4"> .45 ACP <input type="text" value="1" id="lootCount8" class="calculator-div-numInput" size="5"><br>
+                                        <input type="checkbox" name="pubgItem" value="0.5"> 5.56mm <input type="text" value="1" id="lootCount9" class="calculator-div-numInput" size="5"><br>
+                                        <input type="checkbox" name="pubgItem" value="0.5"> Сигналка <input type="text" value="1" id="lootCount10" class="calculator-div-numInput" size="5"><br>
+                                        <input type="checkbox" name="pubgItem" value="0.7"> 7.62mm <input type="text" value="1" id="lootCount11" class="calculator-div-numInput" size="5"><br>
+                                        <input type="checkbox" name="pubgItem" value="1"> .300 Magnum <input type="text" value="1" id="lootCount12" class="calculator-div-numInput" size="5"><br>
+                                        <input type="checkbox" name="pubgItem" value="1.25"> 12 Gauge <input type="text" value="1" id="lootCount13" class="calculator-div-numInput" size="5"><br>
+                                        <input type="checkbox" name="pubgItem" value="2"> Стріли <input type="text" value="1" id="lootCount14" class="calculator-div-numInput" size="5"><br>
+                                        <button class="calculator-button" onclick="calculatePUBGLootWeight()">Обчислити</button>
+                                    </div><br>
                                     <p id="resultPPUBGItemsWeight"></p>
                                 </div>
                                 <div class="calculator-div">

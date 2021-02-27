@@ -92,12 +92,12 @@ function calculatePUBGLootWeight() //loot weight pugb
     {
         if(options[i].checked)
         {
-            result += parseFloat(options[i].value); //if option is checked, adding value to total
+            result += parseFloat(options[i].value*document.getElementById('lootCount'+(i+1)).value); //if option is checked, adding value to total
         }
     }
     
     //printing result
-    document.getElementById('resultPPUBGItemsWeight').innerHTML = "Загалом: "+result+"кг"
+    document.getElementById('resultPPUBGItemsWeight').innerHTML = "Загалом: "+result.toFixed(2)+"кг"
 }
 
 function calculateFuelCount() //smelting furnace calculator
@@ -136,10 +136,10 @@ function calculateStonksIncome() //company stocks profit !!!!!FIX IT!!!!!!!
     var procent = parseFloat(document.getElementById('stockProcent').value);
     
     //calculating year statistic
-    var yearTotal = 100*Math.pow((1+(procent/100)), 4);
+    var yearTotal = 100*(1 + ((procent*4)/100));
     var yearProcent = yearTotal-100;
     
-    var total = (money*Math.pow((1+(yearProcent/100)), time)).toFixed(2);
+    var total = (money*(1 + (yearProcent*time/100))).toFixed(2);
     document.getElementById('resultPStoksIncome').innerHTML = "За "+time+" років у вас буде "+total;
 }
 
@@ -149,4 +149,9 @@ function calculateSavings() //savings calculator
     var time = parseInt(document.getElementById('savingsTime').value);
     
     document.getElementById('resultPSavings').innerHTML = "За "+time+" місяців у вас буде "+(time*money).toFixed(2);
+}
+
+function getStyles() //get css code for calculators
+{
+    document.getElementById('out').style.display = "block";
 }
