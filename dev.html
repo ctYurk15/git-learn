@@ -7,6 +7,20 @@
         <link rel = 'icon' href='images/logo.png' type = 'image/x-icon'>
         <title>KZ300 - для розробників</title>
     </head>
+    <style>
+        pre 
+        {
+          border-left: 3px solid #f2334c;
+          page-break-inside: avoid;
+          font-family: monospace;
+          font-size: 15px;
+          line-height: 1.6;
+          margin-bottom: 1.6em;
+          max-width: 100%;
+          overflow: auto;
+          word-wrap: break-word;
+        }
+    </style>
     <body> 
          
         <table border="0px" class="mainTable">
@@ -43,69 +57,68 @@
                                 </ul>
                             </div>
                             <tr>
-                                <div align="center" width="50%">
-                                    <div class="calculator-div">                                                                           
-                                        <p id="out" style="display: none">
-                                            CSS<br>
-                                            .calculator-list<br>
-                                            {
-                                                list-style-type: none;<br>
-                                            }<br>
-                                            .calculator-button<br>
-                                            {
-                                                border: 3px solid purple;<br>
-                                                border-radius: 7px;<br>
-                                                color: mediumpurple;<br>
-                                                background-color: black;<br>
-                                            }<br>
-                                            .calculator-div<br>
-                                            {
-                                                border: 3px solid purple;<br>
-                                                border-radius: 7px;<br>
-                                                padding: 10px;<br>
-                                                width: 29%;<br>
-                                                height: 50vh;<br>
-                                                float: left;<br>
-                                                margin: 20px;<br>
-                                                text-align: center;<br>
-                                            }<br>
-                                            .calculator-div img<br>
-                                            {
-                                                width: 60%;<br>
-                                            }<br>
-                                            .calculator-div-numInput<br>
-                                            {<br>
-                                                border: 3px solid purple;<br>
-                                                border-radius: 7px;<br>
-                                                color: mediumpurple;<br>
-                                                background-color: black;<br>
-                                            }<br>
-                                            .calculators-div-options<br>
-                                            {<br>
-                                                color: mediumpurple;<br>
-                                                border: 3px solid purple;<br>
-                                                border-radius: 7px;<br>
-                                                background-color: black;<br>
-                                            }<br>
-                                            .calculators-div-options:hover, .calculator-button:hover, .calculator-div-numInput:hover<br>
-                                            {<br>
-                                                color: purple;<br>
-                                                border: 3px solid mediumpurple;<br>
-                                            }<br>
-                                            .calculators-div-options:active<br>
-                                            {<br>
-                                                color: purple;<br>
-                                                background-color: black;<br>
-                                            }<br>
-                                        </p>
-                                        <button class="calculator-button" onclick="getStyles()">Отримати</button>
-                                        <p id="resultPSquareEquation"></p>
+                               <td>                                                                       
+                                    <pre id='out' style="display: none">
+
+                                        CSS
+                                        .calculator-list
+                                        {
+                                            list-style-type: none;
+                                        }
+                                        .calculator-button
+                                        {
+                                            border: 3px solid purple;
+                                            border-radius: 7px;
+                                            color: mediumpurple;
+                                            background-color: black;
+                                        }
+                                        .calculator-div
+                                        {
+                                            border: 3px solid purple;
+                                            border-radius: 7px;
+                                            padding: 10px;
+                                            width: 29%;
+                                            height: 50vh;
+                                            float: left;
+                                            margin: 20px;
+                                            text-align: center;
+                                        }
+                                        .calculator-div img
+                                        {
+                                            width: 60%;
+                                        }
+                                        .calculator-div-numInput
+                                        {
+                                            border: 3px solid purple;
+                                            border-radius: 7px;
+                                            color: mediumpurple;
+                                            background-color: black;
+                                        }
+                                        .calculators-div-options
+                                        {
+                                            color: mediumpurple;
+                                            border: 3px solid purple;
+                                            border-radius: 7px;
+                                            background-color: black;
+                                        }
+                                        .calculators-div-options:hover, .calculator-button:hover, .calculator-div-numInput:hover
+                                        {
+                                            color: purple;
+                                            border: 3px solid mediumpurple;
+                                        }
+                                        .calculators-div-options:active
+                                        {
+                                            color: purple;
+                                            background-color: black;
+                                        }
+
+                                    </pre>
+                                    <button class="calculator-button" onclick="getStyles()">Отримати</button>
+                                    <p id="resultPSquareEquation"></p>
+                                    <div align="left" width="50%">
+                                        Тут ви можете отримати стилі моїх калькуляторів, які добавите на свій сайт. Це абсолютно безкоштовно!
                                     </div>
-                                    
-                                </div>
-                                <div align="left" width="50%">
-                                    Тут ви можете отримати стилі моїх калькуляторів, які добавите на свій сайт. Це абсолютно безкоштовно!
-                                </div>
+                                </td>
                             </tr>
                         </table>
                     </div>
